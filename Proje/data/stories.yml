@@ -1,0 +1,43 @@
+version: "3.0"
+
+stories:
+
+- story: randevu
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: tarih
+  - action: utter_tarih
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+  - action: utter_time
+  - intent: timeonay
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda

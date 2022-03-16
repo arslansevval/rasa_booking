@@ -1,0 +1,70 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- randevu
+- tarih
+- tarihonay
+- timeonay
+- veda
+- name_info
+- contact_info
+entities:
+- name
+- phone
+- mail
+- tarih
+- saat
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name
+  mail:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: mail
+  phone:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: phone
+responses:
+  utter_randevu:
+  - text: Tabii, nasıl yardımcı olabilirim?
+  utter_tarih:
+  - text: .... tarihlerinde müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
+  utter_time:
+  - text: .... saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.
+  utter_randevuonay:
+  - text: .... tarihinde saat ...'da randevunuzu oluşturmak için bazı kişisel bilgilere ihityacım var. Lütfen isim ve soyisim bilgilerinizi girer misiniz?  
+  utter_contact:
+  - text: |-
+      Tanıştığımıza memnun oldum {name}!
+      İleride size daha kolay ulaşmamız adına e-mail adresinizi ve telefon numarınızı alabilir miyim?
+  utter_onay:
+  - text: .... tarihinde saat ...'da randevunuz oluşturulmuştur. İyi günler dilerim.
+actions:
+- utter_tarih
+- utter_randevu
+- utter_time
+- utter_randevuonay
+- utter_telno
+- utter_email
+- utter_onay
+forms:
+  name_form:
+    required_slots:
+    - name
+  mail_form:
+    required_slots:
+    - mail
+  phone_form:
+    required_slots:
+    - phone

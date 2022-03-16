@@ -1,0 +1,324 @@
+version: "3.0"
+nlu:
+- intent: randevu
+  examples: |
+    - randevu almak istiyorum
+    - hangi günlerde boşsunuz?
+    - Merhaba, ben randevu almak istiyorum.
+    - Merhaba, randevu almak istiyorum. Yardımcı olabilir misiniz?
+- intent: name_info
+  examples: |
+    - Benim Adım [Şahnur](name)
+    - Benim Adım [Sude](name)
+    - Benim Adım [Efe](name)
+    - Benim Adım [Emre](name)
+    - Benim Adım [Arda](name)
+    - Benim Adım [Mehmet](name)
+    - Benim Adım [Melek](name)
+    - Benim Adım [Melisa](name)
+    - Benim Adım [Gökhan](name)
+    - Adım [Serhat](name)
+    - Adım [Nuray](name)
+    - Adım [Berfin](name)
+    - Adım [Burak](name)
+    - Adım [Ela](name)
+    - Adım [Ahmet](name)
+    - Adım [Arda](name)
+    - Adım [Ömer](name)
+    - Adım [Mustafa](name)
+    - Adım [Yiğit](name)
+    - Ben [Hülya](name)
+    - Ben [Mustafa](name)
+    - Ben [Süleyman](name)
+    - Ben [Ayhan](name)
+    - Ben [Ela](name)
+    - Ben [Mehmet](name)
+    - Ben [Hüseyin](name)
+    - Ben [Hasan](name)
+    - Ben [Şevval](name)
+    - Ben [Çiğdem](name)
+    - Bana [Melek](name) derler
+    - Bana [Aleyna](name) derler
+    - Bana [Sevim](name) derler
+    - Bana [Yusuf](name) derler
+    - Bana [Aysel](name) derler
+    - Bana [İlayda](name) derler
+    - Bana [Ela](name) derler
+    - Bana [Süleyman](name) derler
+    - Bana [Gamze](name) derler
+    - Bana [Filiz](name) derler
+    - Herkes [Hanife](name) ile çağırır
+    - Herkes [Ece](name) ile çağırır
+    - Herkes [Emirhan](name) ile çağırır
+    - Herkes [Emine](name) ile çağırır
+    - Herkes [Hacer](name) ile çağırır
+    - Herkes [Tuğba](name) ile çağırır
+    - Herkes [Melisa](name) ile çağırır
+    - Herkes [Burak](name) ile çağırır
+    - Herkes [Batuhan](name) ile çağırır
+    - Herkes [Büşra](name) ile çağırır
+    - Herkes [Ertuğ](name) diye hitap eder
+    - Herkes [Nadir](name) diye hitap eder
+    - Herkes [Edhem](name) diye hitap eder
+    - Herkes [Özgul](name) diye hitap eder
+    - Herkes [Derin](name) diye hitap eder
+    - Herkes [Çağdaş](name) diye hitap eder
+    - Herkes [Ari](name) diye hitap eder
+    - Herkes [Cafer](name) diye hitap eder
+    - Herkes [Tahsin](name) diye hitap eder
+    - Herkes [Emin](name) diye hitap eder
+    - ad: [Güvenç](name)
+    - ad: [Yılmaz](name)
+    - ad: [Cihangir](name)
+    - ad: [Ahmet](name)
+    - ad: [Elvan](name)
+    - ad: [Sümeyye](name)
+    - ad: [Gülnur](name)
+    - ad: [Adnan](name)
+    - ad: [Yahya](name)
+    - ad: [Kemal](name)
+    - isim: [Altan](name)
+    - isim: [İsmet](name)
+    - isim: [Mümin](name)
+    - isim: [Dilek](name)
+    - isim: [Ekin](name)
+    - isim: [Hande](name)
+    - isim: [Azize](name)
+    - isim: [ırmak](name)
+    - isim: [Abdullah](name)
+    - isim: [Ekrem](name)
+    - Kısaca [Şevket](name) derler
+    - Kısaca [Alattin](name) derler
+    - Kısaca [Uğur](name) derler
+    - Kısaca [Aysu](name) derler
+    - Kısaca [Berkant](name) derler
+    - Kısaca [Engin](name) derler
+    - Kısaca [Mansur](name) derler
+    - Kısaca [Yunus](name) derler
+    - Kısaca [Aleyna](name) derler
+    - Kısaca [Züleyha](name) derler
+    - [Umut](name)
+    - [Funda](name)
+    - [Derya](name)
+    - [Müge](name)
+    - [Elmas](name)
+    - [Hakan](name)
+    - [Safiye](name)
+    - [Semra](name)
+    - [Emirhan](name)
+    - [Volkan](name)
+    - İsmim [İlker](name)
+    - İsmim [Nurettin](name)
+    - İsmim [Utku](name)
+    - İsmim [Aydan](name)
+    - İsmim [Burcu](name)
+    - İsmim [Ziynet](name)
+    - İsmim [Betül](name)
+    - İsmim [Gözde](name)
+    - İsmim [Nurcan](name)
+    - İsmim [Ayberk](name)
+    - İsmim [Bilge](name)
+    - Benim ismim [Direnç](name)
+    - Benim ismim [Ural](name)
+    - Benim ismim [Alp](name)
+    - Benim ismim [Burhan](name)
+    - Benim ismim [İdris](name)
+    - Benim ismim [Zafer](name)
+    - Benim ismim [Emel](name)
+    - Benim ismim [Eylül](name)
+    - Benim ismim [Nida](name)
+    - Benim ismim [Revza](name)
+    - [Alparslan](name) derler bana
+    - [Alperen](name) derler bana
+    - [Buğra](name) derler bana
+    - [Poyraz](name) derler bana
+    - [Gül](name) derler bana
+    - [Gülbahar](name) derler bana
+    - [Nevra](name) derler bana
+    - [Sultan](name) derler bana
+    - [Tutku](name) derler bana
+    - [Kara](name) diye seslenirler
+    - [Naim](name) diye seslenirler
+    - [Yaşar](name) diye seslenirler
+    - [Baran](name) diye seslenirler
+    - [Cemal](name) diye seslenirler
+    - [Harun](name) diye seslenirler
+    - [Dilek](name) diye seslenirler
+    - [Ecrin](name) diye seslenirler
+    - [İrem](name) diye seslenirler
+    - [Ayşe](name) diye seslenirler
+    - Çoğu insan [Şehrazat](name) der
+    - Çoğu insan [Ediz](name) der
+    - Çoğu insan [Hadi](name) der
+    - Çoğu insan [Şahin](name) der
+    - Çoğu insan [Yamaç](name) der
+    - Çoğu insan [Azize](name) der
+    - Çoğu insan [Nihal](name) der
+    - Çoğu insan [Fehime](name) der
+    - Çoğu insan [Kıvanç](name) der
+    - Çoğu insan [Özgür](name) der
+    - [Ulvi](name) ismini tercih ediyorum
+    - [Semih](name) ismini tercih ediyorum
+    - [Boran](name) ismini tercih ediyorum
+    - [Efe](name) ismini tercih ediyorum
+    - [Çağla](name) ismini tercih ediyorum
+    - [Kerime](name) ismini tercih ediyorum
+    - [Ceylan](name) ismini tercih ediyorum
+    - [Cennet](name) ismini tercih ediyorum
+    - [Cemal](name) ismini tercih ediyorum
+    - [Ensar](name) ismini tercih ediyorum
+    - Çoğunlukla [Şerif](name) diye çağrılıyorum
+    - Çoğunlukla [Berat](name) diye çağrılıyorum
+    - Çoğunlukla [Emre](name) diye çağrılıyorum
+    - Çoğunlukla [Vural](name) diye çağrılıyorum
+    - Çoğunlukla [Dilay](name) diye çağrılıyorum
+    - Çoğunlukla [Tutku](name) diye çağrılıyorum
+    - Çoğunlukla [Şirin](name) diye çağrılıyorum
+    - Çoğunlukla [Kelebek](name) diye çağrılıyorum
+    - Çoğunlukla [Mehtap](name) diye çağrılıyorum
+    - Çoğunlukla [Şeyma](name) diye çağrılıyorum
+    - Çoğunlukla [Asım](name) diyorlar
+    - Çoğunlukla [Eser](name) diyorlar
+    - Çoğunlukla [Ömer](name) diyorlar
+    - Çoğunlukla [Faruk](name) diyorlar
+    - Çoğunlukla [Berna](name) diyorlar
+    - Çoğunlukla [Nefes](name) diyorlar
+    - Çoğunlukla [Rüşen](name) diyorlar
+    - Çoğunlukla [Batuhan](name) diyorlar
+    - Çoğunlukla [Ayla](name) diyorlar
+    - Çoğunlukla [Evren](name) diyorlar
+    - Tabi ki adım [Ugur](name)
+    - [Hülya](name)
+    - Adım [Süleyman](name)
+    - Adım [ugur](name)
+    - Merhaba ben [Hülya](name)
+    - Herkes [Mutsafa](name) der
+- intent: contact_info
+  examples: |
+    - [mio1@gmail.com](mail) [05504497678](phone)
+    - [malov0071996@gmail.com](mail) [05573058559](phone)
+    - [adesh948@gmail.com](mail) [05513847005](phone)
+    - [spektrx@gmail.com](mail) [05486605790](phone)
+    - [kristinamaz@hotmail.com](mail) [05559511301](phone)
+    - [tebrown55@hotmail.com](mail) [05574281148](phone)
+    - [qjazz@hotmail.com](mail) [05313998301](phone)
+    - [toneass@hotmail.com](mail) [05097549985](phone)
+    - [zheltyshovb@yahoo.com](mail) [05348907571](phone)
+    - [mercookaz@yahoo.com](mail) [05343180798](phone)
+    - [c1rcaman@yahoo.com](mail) [05001841283](phone)
+    - [rfs2008@yahoo.com](mail) [05440520024](phone)
+    - [05386313111](phone), [ginger2010@gmail.com](mail)
+    - [05506240648](phone), [kitatiksa@gmail.com](mail)
+    - [05385379924](phone), [frekes987@gmail.com](mail)
+    - [05088334529](phone), [wlanmojomro@gmail.com](mail)
+    - [05022734894](phone), [jose2033@hotmail.com](mail)
+    - [05019496265](phone), [skplehanovec@hotmail.com](mail)
+    - [05068728950](phone), [jtetu6380@hotmail.com](mail)
+    - [05060477487](phone), [ericx16@hotmail.com](mail)
+    - [05564062512](phone), [nadezhdakotenok@yahoo.com](mail)
+    - [05376041667](phone), [antinous@yahoo.com](mail)
+    - [05388665153](phone), [mrsfsgh2007@yahoo.com](mail)
+    - [05419199943](phone), [dabigbo55@yahoo.com](mail)
+    - Numaram [05470034953](phone), email [chidosyter@gmail.com](mail)
+    - Numaram [05595349235](phone), email [davealex@gmail.com](mail)
+    - Numaram [05455345825](phone), email [f989w830@gmail.com](mail)
+    - Numaram [05459445951](phone), email [alinafraga@gmail.com](mail)
+    - Numaram [05386491414](phone), email [acj76@hotmail.com](mail)
+    - Numaram [05335756268](phone), email [naya82@hotmail.com](mail)
+    - Numaram [05361112671](phone), email [chnoupi@hotmail.com](mail)
+    - Numaram [05578068380](phone), email [accounting86@hotmail.com](mail)
+    - Numaram [05577472732](phone), email [jerr696696@yahoo.com](mail)
+    - Numaram [05509617677](phone), email [froddob@yahoo.com](mail)
+    - Numaram [05575152148](phone), email [alkash2791@yahoo.com](mail)
+    - Numaram [05439824890](phone), email [fbgfbg2f1b1g45@yahoo.com](mail)
+    - E-mail adresim [meric.yazici@karaduman.edu.tr](mail) , telefon numaram [05000220072](phone)
+    - E-mail adresim [wyildizoglu@mynet.com](mail) , telefon numaram [05313501181](phone)
+    - E-mail adresim [kunter.ada@besok.com](mail) , telefon numaram [05057358558](phone)
+    - E-mail adresim [oakar@yandex.com.tr](mail) , telefon numaram [05473975774](phone)
+    - E-mail adresim [emir.gunday@uluhan.edu.tr](mail) , telefon numaram [05551845703](phone)
+    - E-mail adresim [ege.yorulmaz@yahoo.com](mail) , telefon numaram [05596335858](phone)
+    - E-mail adresim [cagan42@ilicali.info](mail) , telefon numaram [05484998411](phone)
+    - E-mail adresim [emir27@gmail.com](mail) , telefon numaram [05565361455](phone)
+    - E-mail adresim [sinem.karaer@mynet.com](mail) , telefon numaram [05525807076](phone)
+    - E-mail adresim [ptokatlioglu@yahoo.com](mail) , telefon numaram [05590120333](phone)
+    - Benim mail adresim [ozbir.cinar@baykam.com.tr](mail) ve telefon numaram [05507953735](phone)
+    - Benim mail adresim [berberoglu.armagan@hotmail.com](mail) ve telefon numaram [05089345858](phone)
+    - Benim mail adresim [ebru.sadiklar@gmail.com](mail) ve telefon numaram [05491837218](phone)
+    - Benim mail adresim [doruk23@turk.net](mail) ve telefon numaram [05474186215](phone)
+    - Benim mail adresim [aykac.meric@hotmail.com](mail) ve telefon numaram [05433359004](phone)
+    - Benim mail adresim [yigit73@yilmazer.com](mail) ve telefon numaram [05433934396](phone)
+    - Benim mail adresim [sinem47@erdogan.edu.tr](mail) ve telefon numaram [05430705072](phone)
+    - Benim mail adresim [cinar31@koyluoglu.com](mail) ve telefon numaram [05001664455](phone)
+    - Benim mail adresim [erbay.sinem@okur.com](mail) ve telefon numaram [05018321769](phone)
+    - Benim mail adresim [cyetkiner@yahoo.com](mail) ve telefon numaram [05329038225](phone)
+    - Tabi e mail adresim [ruya.kahveci@gmail.com](mail), numaram [05302615213](phone)
+    - Tabi e mail adresim [tunaboylu.efe@turk.net](mail), numaram [05399356869](phone)
+    - Tabi e mail adresim [atan.irem@mertoglu.info](mail), numaram [05027783187](phone)
+    - Tabi e mail adresim [burcu.poyrazoglu@mynet.com](mail), numaram [05324113706](phone)
+    - Tabi e mail adresim [ogun.akal@kilicci.net](mail), numaram [05416634143](phone)
+    - Tabi e mail adresim [aozbir@yalcin.com](mail), numaram [05395625215](phone)
+    - Tabi e mail adresim [uyetkiner@turkdogan.com.tr](mail), numaram [05583252759](phone)
+    - Tabi e mail adresim [xkocyigit@gmail.com](mail), numaram [05048660490](phone)
+    - Tabi e mail adresim [ebru13@hotmail.com](mail), numaram [05011063245](phone)
+    - Tabi e mail adresim [emel.sarioglu@orbay.net](mail), numaram [05386745883](phone)
+    - Telefon numaram [05355749958](phone), mail adresim [kagan21@gmail.com](mail)
+    - Telefon numaram [05508461709](phone), mail adresim [ktekelioglu@turk.net](mail)
+    - Telefon numaram [05537927759](phone), mail adresim [karaduman.ege@tasci.net](mail)
+    - Telefon numaram [05369374446](phone), mail adresim [guney97@superposta.com](mail)
+    - Telefon numaram [05475083106](phone), mail adresim [yazici.ece@turk.net](mail)
+    - Telefon numaram [05394363685](phone), mail adresim [demirbas.meric@superposta.com](mail)
+    - Telefon numaram [05404514333](phone), mail adresim [derin19@aybar.com](mail)
+    - Telefon numaram [05046412182](phone), mail adresim [sahnur61@hotmail.com](mail)
+    - Telefon numaram [05426804648](phone), mail adresim [cem40@kurutluoglu.com](mail)
+    - Telefon numaram [05029852056](phone), mail adresim [xadivar@superposta.com](mail)
+    - Mail [emel97@hotmail.com](mail), telefon numarası [05068794336](phone)
+    - Mail [turker57@ilicali.com.tr](mail), telefon numarası [05371662844](phone)
+    - Mail [tkormukcu@dagdas.net](mail), telefon numarası [05537623849](phone)
+    - Mail [camdali.sahnur@okumus.net](mail), telefon numarası [05591146641](phone)
+    - Mail [irem.alpugan@superposta.com](mail), telefon numarası [05595960902](phone)
+    - Mail [easikoglu@gurmen.net](mail), telefon numarası [05559683873](phone)
+    - Mail [velioglu.ruya@mynet.com](mail), telefon numarası [05524279046](phone)
+    - Mail [sinanoglu.cinar@superposta.com](mail), telefon numarası [05430852835](phone)
+    - Mail [irem59@gumuspala.info](mail), telefon numarası [05375052448](phone)
+    - Mail [sinem18@paksut.edu.tr](mail), telefon numarası [05578554611](phone)
+    - Evet mail adresim [xsuleymanoglu@pektemek.edu.tr](mail) ve numaram [05396242225](phone)
+    - Evet mail adresim [ekici.burcu@mynet.com](mail) ve numaram [05499271910](phone)
+    - Evet mail adresim [baturalp.emel@superposta.com](mail) ve numaram [05038281936](phone)
+    - Evet mail adresim [turker58@atan.info](mail) ve numaram [05458481318](phone)
+    - Evet mail adresim [umran.nalbantoglu@yahoo.com](mail) ve numaram [05565862839](phone)
+    - Evet mail adresim [umran.balaban@akyurek.info](mail) ve numaram [05570555137](phone)
+    - Evet mail adresim [xcetin@superposta.com](mail) ve numaram [05593898823](phone)
+    - Evet mail adresim [hakgul@hotmail.com](mail) ve numaram [05508045375](phone)
+    - Evet mail adresim [derin04@agaoglu.net](mail) ve numaram [05593340822](phone)
+    - Evet mail adresim [umran.ozkara@yandex.com.tr](mail) ve numaram [05362451076](phone)
+    - Kullandığım mail adresim [ebru.yalcin@dogan.edu.tr](mail) ve telefon numaram [05372372299](phone)
+    - Kullandığım mail adresim [jpaksut@baykam.org](mail) ve telefon numaram [05341348304](phone)
+    - Kullandığım mail adresim [toprak42@alpugan.net](mail) ve telefon numaram [05545691888](phone)
+    - Kullandığım mail adresim [btutuncu@menemencioglu.com](mail) ve telefon numaram [05051211690](phone)
+    - Kullandığım mail adresim [ifahri@turk.net](mail) ve telefon numaram [05045251638](phone)
+    - Kullandığım mail adresim [umran.okur@turk.net](mail) ve telefon numaram [05090944015](phone)
+    - Kullandığım mail adresim [adal.ebru@yandex.com.tr](mail) ve telefon numaram [05079820263](phone)
+    - Kullandığım mail adresim [turkdogan.barlas@koc.com](mail) ve telefon numaram [05458980848](phone)
+    - Kullandığım mail adresim [emel.akan@dusenkalkar.com.tr](mail) ve telefon numaram [05028567654](phone)
+    - Kullandığım mail adresim [ebru12@mynet.com](mail) ve telefon numaram [05554297965](phone)
+    - Evet [ugursarp1798@gmail.com](mail), [05056714215](phone)
+    - Email adresim [ruya.kahveci@gmail.com](mail), telefon numaram [05302615213](phone)
+    - telefon numaram [05027783148](phone), mail adresim [atan.irem@mertoglu.info](mail)
+    - [ugursarp1798@gmail.com](mail), [05056714215](phone)
+    - [05056714215](phone), [ugursarp1798@gmail.com](mail)
+    - Tabi ki [ruya.kahveci@gmail.com](mail), [05302615213](phone)
+    - [tunaboylu.efe@turk.net](mail), [05399356869](phone)
+    - [tunaboylu.efe@turk.net](mail), [05027783187](phone)
+- intent: tarih
+  examples: |
+    - En yakın tarih olarak ne zaman randevu alabilirim?
+    - Müsait olduğunuz en yakın tarih nedir?
+- intent: tarihonay
+  examples: |
+    - .... tarihine randevu almak istiyorum.
+- intent: timeonay
+  examples: |
+    - Saat .... bana uygundur.
+- intent: veda
+  examples: |
+    - Teşekkürler. İyi günler.
