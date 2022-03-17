@@ -1,24 +1,40 @@
 version: "3.0"
 nlu:
+- intent: selamlaşma
+  examples: |
+    - Selam
+    - Merhaba
+    - Naber
+    - Hey
+    - Merhabalar
 - intent: randevu
   examples: |
     - randevu almak istiyorum
     - hangi günlerde boşsunuz?
     - Merhaba, ben randevu almak istiyorum.
     - Merhaba, randevu almak istiyorum. Yardımcı olabilir misiniz?
+- intent: randevudetay
+  examples: |
+    - Merhaba ben kanal tedavi uzmanınız var mı? Bilgi almak istiyorum.
+    - Benim dişlerimde [cerrahi](uzman) bir müdahale gerekli bu nedenle uzman tarafından bilgi almak ve muayene olmak için bu bölümden randevu almak istiyorum.
+    - Kanal tedavi işlemi gören bir dişimde ağrı var. [Endodonti](uzman) uzmanınız var mı bilgi alabilir miyim?
+    - Kliniğinizde periodontoloji uzmanı
+    - [Ağız, diş ve çene cerrahisi](uzman) bölümünüz var mı?
+    - Kanal tedavi işlemi gören bir dişimde ağrı var. [Endodonti](uzman) uzmanınız var mı bilgi alabilir miyim?
+    - Kliniğinizde [periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
 - intent: name_info
   examples: |
-    - Benim Adım [Şahnur](name)
-    - Benim Adım [Sude](name)
-    - Benim Adım [Efe](name)
-    - Benim Adım [Emre](name)
-    - Benim Adım [Arda](name)
-    - Benim Adım [Mehmet](name)
-    - Benim Adım [Melek](name)
-    - Benim Adım [Melisa](name)
-    - Benim Adım [Gökhan](name)
-    - Adım [Serhat](name)
-    - Adım [Nuray](name)
+    - Benim Adım [Şahnur Yılmaz](name)
+    - Benim Adım [Sude Elmas Yıldız](name)
+    - Benim Adım [Efe Murat Arslan](name)
+    - Benim Adım [Emre Karabudak](name)
+    - Benim Adım [Arda Koç](name)
+    - Benim Adım [Mehmet Sabancı](name)
+    - Benim Adım [Melek Dalgakıran](name)
+    - Benim Adım [Melisa Şengül](name)
+    - Benim Adım [Gökhan Sarp](name)
+    - Adım [Serhat Can Sarp](name)
+    - Adım [Nuray Sarp](name)
     - Adım [Berfin](name)
     - Adım [Burak](name)
     - Adım [Ela](name)
@@ -313,12 +329,21 @@ nlu:
   examples: |
     - En yakın tarih olarak ne zaman randevu alabilirim?
     - Müsait olduğunuz en yakın tarih nedir?
+    - Dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
 - intent: tarihonay
   examples: |
-    - .... tarihine randevu almak istiyorum.
+    - [20.03.2022](date) tarihine randevu almak istiyorum.
+    - [28.04.2022](date)
 - intent: timeonay
   examples: |
-    - Saat .... bana uygundur.
+    - Saat [09:00](time) bana uygundur.
+    - Saat [09.00](time) bana uygundur.
+    - [10:00](time)
+    - [11.00](time)
+    - [12:00](time)
+- intent: ücret
+  examples: |
+    - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
 - intent: veda
   examples: |
     - Teşekkürler. İyi günler.

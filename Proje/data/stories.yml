@@ -1,29 +1,25 @@
 version: "3.0"
 
 stories:
-
-- story: randevu
-  steps:
-  - intent: randevu
-  - action: utter_randevu
-
-
 - story: interactive_story_1
   steps:
-  - intent: randevu
-  - action: utter_randevu
-  - intent: tarih
-  - action: utter_tarih
-
-- story: interactive_story_1
-  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
   - intent: randevu
   - action: utter_randevu
   - intent: tarih
   - action: utter_tarih
   - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
   - action: utter_time
   - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
   - action: utter_randevuonay
   - intent: name_info
     entities:
@@ -41,3 +37,554 @@ stories:
     - phone: '05302615213'
   - action: utter_onay
   - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevu
+  - action: utter_randevu
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarih
+  - action: utter_tarih
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevu
+  - action: utter_randevu
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevu
+  - action: utter_randevu
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: randevu
+  - action: utter_randevu
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_1
+  steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda

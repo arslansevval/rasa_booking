@@ -4,18 +4,22 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - randevu
+- randevudetay
+- selamlaşma
 - tarih
 - tarihonay
 - timeonay
 - veda
 - name_info
 - contact_info
+- ücret
 entities:
+- date
+- mail
 - name
 - phone
-- mail
-- tarih
-- saat
+- time
+- uzman
 slots:
   name:
     type: text
@@ -35,29 +39,61 @@ slots:
     mappings:
     - type: from_entity
       entity: phone
+  date:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: date
+  time:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: time
+  uzman:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: uzman
 responses:
+  utter_selamlaşma:
+  - text: Merhabalar, nasıl yardımcı olabilirim?
+  utter_ücret:
+  - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir. 
   utter_randevu:
-  - text: Tabii, nasıl yardımcı olabilirim?
+  - text: Tabii, isteklerinizi detaylandırırsanız size rahatlıkla yardımcı olabilirim.
+  utter_randevudetay:
+  - text: |-
+      {uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
   utter_tarih:
-  - text: .... tarihlerinde müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
+  - text: '.... tarihlerinde müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_time:
-  - text: .... saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.
+  - text: '{date} tarihinde, .... saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.'
   utter_randevuonay:
-  - text: .... tarihinde saat ...'da randevunuzu oluşturmak için bazı kişisel bilgilere ihityacım var. Lütfen isim ve soyisim bilgilerinizi girer misiniz?  
+  - text: "{date} tarihinde saat {time}'da randevunuzu oluşturmak için bazı kişisel bilgilere ihityacım var. Lütfen isim ve soyisim bilgilerinizi girer misiniz?  "
   utter_contact:
   - text: |-
       Tanıştığımıza memnun oldum {name}!
       İleride size daha kolay ulaşmamız adına e-mail adresinizi ve telefon numarınızı alabilir miyim?
   utter_onay:
-  - text: .... tarihinde saat ...'da randevunuz oluşturulmuştur. İyi günler dilerim.
+  - text: |-
+      {date} tarihinde saat {time}'da randevunuz oluşturulmuştur.
+  utter_veda:
+  - text: |-
+      İyi günler dilerim {name}.
 actions:
-- utter_tarih
-- utter_randevu
-- utter_time
-- utter_randevuonay
-- utter_telno
-- utter_email
+- utter_contact
 - utter_onay
+- utter_randevu
+- utter_randevudetay
+- utter_randevuonay
+- utter_selamlaşma
+- utter_tarih
+- utter_time
+- utter_ücret
+- utter_veda
 forms:
   name_form:
     required_slots:
@@ -68,3 +104,12 @@ forms:
   phone_form:
     required_slots:
     - phone
+  date_form:
+    required_slots:
+    - date
+  time_form:
+    required_slots:
+    - time
+  uzman_form:
+    required_slots:
+    - uzman
