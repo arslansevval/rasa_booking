@@ -588,3 +588,43 @@ stories:
   - action: utter_onay
   - intent: veda
   - action: utter_veda
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevudetay
+    entities:
+    - uzman: ağız
+    - uzman: diş ve çene cerrahisi
+  - slot_was_set:
+    - uzman: diş ve çene cerrahisi
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 20.05.2022
+  - slot_was_set:
+    - date: 20.05.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: '09.00'
+  - slot_was_set:
+    - time: '09.00'
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: şevval arslan
+  - slot_was_set:
+    - name: şevval arslan
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: arslanq@gmail.com
+    - phone: '020051158798'
+  - slot_was_set:
+    - mail: arslanq@gmail.com
+  - slot_was_set:
+    - phone: '020051158798'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda

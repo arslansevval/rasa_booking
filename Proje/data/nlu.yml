@@ -20,8 +20,8 @@ nlu:
     - Kanal tedavi işlemi gören bir dişimde ağrı var. [Endodonti](uzman) uzmanınız var mı bilgi alabilir miyim?
     - Kliniğinizde periodontoloji uzmanı
     - [Ağız, diş ve çene cerrahisi](uzman) bölümünüz var mı?
-    - Kanal tedavi işlemi gören bir dişimde ağrı var. [Endodonti](uzman) uzmanınız var mı bilgi alabilir miyim?
     - Kliniğinizde [periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [ağız](uzman), [diş ve çene cerrahisi](uzman) alanında uzman çalışıyor mu?
 - intent: name_info
   examples: |
     - Benim Adım [Şahnur Yılmaz](name)
@@ -209,6 +209,7 @@ nlu:
     - Adım [ugur](name)
     - Merhaba ben [Hülya](name)
     - Herkes [Mutsafa](name) der
+    - [şevval arslan](name)
 - intent: contact_info
   examples: |
     - [mio1@gmail.com](mail) [05504497678](phone)
@@ -325,6 +326,7 @@ nlu:
     - Tabi ki [ruya.kahveci@gmail.com](mail), [05302615213](phone)
     - [tunaboylu.efe@turk.net](mail), [05399356869](phone)
     - [tunaboylu.efe@turk.net](mail), [05027783187](phone)
+    - [arslanq@gmail.com](mail) [020051158798](phone)
 - intent: tarih
   examples: |
     - En yakın tarih olarak ne zaman randevu alabilirim?
@@ -334,6 +336,7 @@ nlu:
   examples: |
     - [20.03.2022](date) tarihine randevu almak istiyorum.
     - [28.04.2022](date)
+    - [20.05.2022](date) tarihini seçiyorum
 - intent: timeonay
   examples: |
     - Saat [09:00](time) bana uygundur.
@@ -341,9 +344,11 @@ nlu:
     - [10:00](time)
     - [11.00](time)
     - [12:00](time)
+    - [09.00](time)
 - intent: ücret
   examples: |
     - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
 - intent: veda
   examples: |
     - Teşekkürler. İyi günler.
+    - teşekkürler. iyi günler

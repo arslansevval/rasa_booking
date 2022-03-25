@@ -3,15 +3,15 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- randevu
-- randevudetay
-- selamlaşma
-- tarih
-- tarihonay
-- timeonay
-- veda
 - name_info
+- randevudetay
+- veda
+- selamlaşma
+- timeonay
+- tarihonay
 - contact_info
+- randevu
+- tarih
 - ücret
 entities:
 - date
@@ -61,12 +61,11 @@ responses:
   utter_selamlaşma:
   - text: Merhabalar, nasıl yardımcı olabilirim?
   utter_ücret:
-  - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir. 
+  - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir.
   utter_randevu:
   - text: Tabii, isteklerinizi detaylandırırsanız size rahatlıkla yardımcı olabilirim.
   utter_randevudetay:
-  - text: |-
-      {uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
+  - text: '{uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_tarih:
   - text: '.... tarihlerinde müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_time:
@@ -78,11 +77,9 @@ responses:
       Tanıştığımıza memnun oldum {name}!
       İleride size daha kolay ulaşmamız adına e-mail adresinizi ve telefon numarınızı alabilir miyim?
   utter_onay:
-  - text: |-
-      {date} tarihinde saat {time}'da randevunuz oluşturulmuştur.
+  - text: "{date} tarihinde saat {time}'da randevunuz oluşturulmuştur."
   utter_veda:
-  - text: |-
-      İyi günler dilerim {name}.
+  - text: İyi günler dilerim {name}.
 actions:
 - utter_contact
 - utter_onay
@@ -92,8 +89,8 @@ actions:
 - utter_selamlaşma
 - utter_tarih
 - utter_time
-- utter_ücret
 - utter_veda
+- utter_ücret
 forms:
   name_form:
     required_slots:
