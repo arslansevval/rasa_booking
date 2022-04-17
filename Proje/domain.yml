@@ -63,7 +63,7 @@ responses:
   utter_ücret:
   - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir.
   utter_randevu:
-  - text: Tabii, isteklerinizi detaylandırırsanız size rahatlıkla yardımcı olabilirim.
+  - text: Tabii, isteklerinizi detaylandırırsanız size rahatlıkla yardımcı olabilirim. Muayene olmak için uzman bir doktor mu tercih edersiniz yoksa muayene için mi randevu almak istiyorusunuz?
   utter_randevudetay:
   - text: '{uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_tarih:

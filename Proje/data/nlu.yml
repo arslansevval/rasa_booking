@@ -7,12 +7,20 @@ nlu:
     - Naber
     - Hey
     - Merhabalar
+    - Merhabalar, yardımcı olabilir misiniz?
+    - Selam, yardımcı olabilir misiniz?
+- intent: ücret
+  examples: |
+    - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
 - intent: randevu
   examples: |
     - randevu almak istiyorum
     - hangi günlerde boşsunuz?
     - Merhaba, ben randevu almak istiyorum.
     - Merhaba, randevu almak istiyorum. Yardımcı olabilir misiniz?
+    - Yardımcı olabilir misiniz?
+    - Randevu almak istiyorum.
+    - Hangi günler müsaitsiniz?
 - intent: randevudetay
   examples: |
     - Merhaba ben kanal tedavi uzmanınız var mı? Bilgi almak istiyorum.
@@ -21,7 +29,56 @@ nlu:
     - Kliniğinizde periodontoloji uzmanı
     - [Ağız, diş ve çene cerrahisi](uzman) bölümünüz var mı?
     - Kliniğinizde [periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
-    - Kliniğinizde [ağız](uzman), [diş ve çene cerrahisi](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [ağız diş ve çene cerrahisi](uzman) alanında uzman çalışıyor mu?
+- intent: tarih
+  examples: |
+    - En yakın tarih olarak ne zaman randevu alabilirim?
+    - Muayene için en yakın tarih olarak ne zaman randevu alabilirim?
+    - Muayene için müsait olduğunuz en yakın tarih nedir?
+    - Müsait olduğunuz en yakın tarih nedir?
+    - Muayene olmak istiyorum. Müsait olduğunuz en yakın tarih nedir?
+    - Dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
+    - Dişim çok ağrıyor. Muayene olmak istiyorum. En yakın ne zamana randevu alabilirim?
+    - Muayene olmak istiyorum dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
+    - Muayene olmak istiyorum dişim çok ağrıyor. Müsait olduğunuz en yakın tarih nedir?
+    - Genel muayene için randevu alacağım. En yakın ne zamana randevu alabilirim? 
+    - en yakın tarih olarak ne zaman randevu alabilirim?
+    - muayene için en yakın tarih olarak ne zaman randevu alabilirim?
+    - muayene için müsait olduğunuz en yakın tarih nedir?
+    - müsait olduğunuz en yakın tarih nedir?
+    - muayene olmak istiyorum. Müsait olduğunuz en yakın tarih nedir?
+    - dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
+    - dişim çok ağrıyor. Muayene olmak istiyorum. En yakın ne zamana randevu alabilirim?
+    - muayene olmak istiyorum dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
+    - muayene olmak istiyorum dişim çok ağrıyor. Müsait olduğunuz en yakın tarih nedir?
+    - genel muayene için randevu alacağım. En yakın ne zamana randevu alabilirim? 
+- intent: tarihonay
+  examples: |
+    - [20.03.2022](date) tarihine randevu almak istiyorum.
+    - [28.04.2022](date)
+    - [20.05.2022](date) tarihini seçiyorum
+    - [20:03:2022](date) tarihine randevu almak istiyorum.
+    - [28:10.2022](date)
+    - [04.12:2023](date) tarihini seçiyorum
+    - [20.11.2024](date) tarihine randevu almak istiyorum.
+    - [15.07.2025](date)
+    - [29.08.2022](date) tarihini seçiyorum
+- intent: timeonay
+  examples: |
+    - Saat [09:00](time) bana uygundur.
+    - Saat [09.00](time) bana uygundur.
+    - [10:00](time)
+    - [11.00](time)
+    - [12:00](time)
+    - [09.00](time)
+    - [10:00](time) saatini seçiyorum.
+    - [11.00](time) saatini seçiyorum.
+    - [12:00](time) saatini seçiyorum.
+    - [09.00](time) saatini seçiyorum.
+    - [10:00](time) saatine randevu almak itiyorum.
+    - [11.00](time) saatine randevu almak itiyorum.
+    - [12:00](time) saatine randevu almak itiyorum.
+    - [09.00](time) saatine randevu almak itiyorum.
 - intent: name_info
   examples: |
     - Benim Adım [Şahnur Yılmaz](name)
@@ -327,28 +384,15 @@ nlu:
     - [tunaboylu.efe@turk.net](mail), [05399356869](phone)
     - [tunaboylu.efe@turk.net](mail), [05027783187](phone)
     - [arslanq@gmail.com](mail) [020051158798](phone)
-- intent: tarih
-  examples: |
-    - En yakın tarih olarak ne zaman randevu alabilirim?
-    - Müsait olduğunuz en yakın tarih nedir?
-    - Dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
-- intent: tarihonay
-  examples: |
-    - [20.03.2022](date) tarihine randevu almak istiyorum.
-    - [28.04.2022](date)
-    - [20.05.2022](date) tarihini seçiyorum
-- intent: timeonay
-  examples: |
-    - Saat [09:00](time) bana uygundur.
-    - Saat [09.00](time) bana uygundur.
-    - [10:00](time)
-    - [11.00](time)
-    - [12:00](time)
-    - [09.00](time)
-- intent: ücret
-  examples: |
-    - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
+
+
 - intent: veda
   examples: |
     - Teşekkürler. İyi günler.
     - teşekkürler. iyi günler
+    - Bye bye
+    - Bay bay
+    - Görüşürüz
+    - İyi akşamlar
+    - İyi akşamlar kolay gelsin
+
