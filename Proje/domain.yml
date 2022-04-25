@@ -10,9 +10,9 @@ intents:
 - timeonay
 - tarihonay
 - contact_info
-- randevu
 - tarih
 - ücret
+- olumsuz
 entities:
 - date
 - mail
@@ -62,12 +62,10 @@ responses:
   - text: Merhabalar, nasıl yardımcı olabilirim?
   utter_ücret:
   - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir.
-  utter_randevu:
-  - text: Tabii, isteklerinizi detaylandırırsanız size rahatlıkla yardımcı olabilirim. Muayene olmak için uzman bir doktor mu tercih edersiniz yoksa muayene için mi randevu almak istiyorusunuz?
   utter_randevudetay:
   - text: '{uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_tarih:
-  - text: '.... tarihlerinde müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
+  - text: Size yardımcı olabilmek adına doktorlarımızın müsait olduğu tarihleri vereceğim. '.... tarihler aralığında müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
   utter_time:
   - text: '{date} tarihinde, .... saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.'
   utter_randevuonay:
@@ -79,11 +77,10 @@ responses:
   utter_onay:
   - text: "{date} tarihinde saat {time}'da randevunuz oluşturulmuştur."
   utter_veda:
-  - text: İyi günler dilerim {name}.
+  - text: İyi günler dilerim.
 actions:
 - utter_contact
 - utter_onay
-- utter_randevu
 - utter_randevudetay
 - utter_randevuonay
 - utter_selamlaşma

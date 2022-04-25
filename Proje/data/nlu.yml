@@ -12,15 +12,12 @@ nlu:
 - intent: ücret
   examples: |
     - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
-- intent: randevu
-  examples: |
-    - randevu almak istiyorum
-    - hangi günlerde boşsunuz?
-    - Merhaba, ben randevu almak istiyorum.
-    - Merhaba, randevu almak istiyorum. Yardımcı olabilir misiniz?
-    - Yardımcı olabilir misiniz?
-    - Randevu almak istiyorum.
-    - Hangi günler müsaitsiniz?
+    - muayene ücretini öğrenebilir miyim
+    - Muayene ücretini öğrenmek istiyorum  
+    - Muayene ücretini öğrenebilir miyim?
+    - Muayene ücreti ne kadar?
+    - Randevu almak istiyorum fakat önce muayene ücretini öğrenebilir miyim?
+    
 - intent: randevudetay
   examples: |
     - Merhaba ben kanal tedavi uzmanınız var mı? Bilgi almak istiyorum.
@@ -32,6 +29,13 @@ nlu:
     - Kliniğinizde [ağız diş ve çene cerrahisi](uzman) alanında uzman çalışıyor mu?
 - intent: tarih
   examples: |
+    - randevu almak istiyorum
+    - hangi günlerde boşsunuz?
+    - Merhaba, ben randevu almak istiyorum.
+    - Merhaba, randevu almak istiyorum. Yardımcı olabilir misiniz?
+    - Yardımcı olabilir misiniz?
+    - Randevu almak istiyorum.
+    - Hangi günler müsaitsiniz?
     - En yakın tarih olarak ne zaman randevu alabilirim?
     - Muayene için en yakın tarih olarak ne zaman randevu alabilirim?
     - Muayene için müsait olduğunuz en yakın tarih nedir?
@@ -52,6 +56,7 @@ nlu:
     - muayene olmak istiyorum dişim çok ağrıyor. En yakın ne zamana randevu alabilirim?
     - muayene olmak istiyorum dişim çok ağrıyor. Müsait olduğunuz en yakın tarih nedir?
     - genel muayene için randevu alacağım. En yakın ne zamana randevu alabilirim? 
+    - En yakın ne zamana randevu alabilirim? 
 - intent: tarihonay
   examples: |
     - [20.03.2022](date) tarihine randevu almak istiyorum.
@@ -384,7 +389,13 @@ nlu:
     - [tunaboylu.efe@turk.net](mail), [05399356869](phone)
     - [tunaboylu.efe@turk.net](mail), [05027783187](phone)
     - [arslanq@gmail.com](mail) [020051158798](phone)
-
+- intent: olumsuz
+  examples: |
+    - ben vazgeçtim. teşekkürler iyi günler
+    - kararımı değiştirdim. İyi günler
+    - randevu almaktan vazgeçtim. teşekkürler
+    - Önümdeki iki hafta boyunca müsait değilim bu yüzden vazgeçtim. Teşekkürler
+    - İlgilendiğiniz için teşekkürler fakat ben vazgeçtim. İyi günler 
 
 - intent: veda
   examples: |

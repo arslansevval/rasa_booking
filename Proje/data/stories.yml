@@ -1,14 +1,16 @@
 version: "3.0"
-
+#olumlu storyler
+#-------------------------------#
+#-------------------------------#
 stories:
 - story: interactive_story_1
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
-  - intent: randevu
-  - action: utter_randevu
   - intent: tarih
   - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -39,12 +41,12 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_2
   steps:
-  - intent: randevu
-  - action: utter_randevu
   - intent: tarih
   - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -75,14 +77,14 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_3
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
-  - intent: randevu
-  - action: utter_randevu
   - intent: tarih
   - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -113,12 +115,12 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_4
   steps:
-  - intent: randevu
-  - action: utter_randevu
   - intent: tarih
   - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -149,7 +151,7 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_5
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
@@ -187,7 +189,7 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_6
   steps:
   - intent: ücret
   - action: utter_ücret
@@ -223,182 +225,18 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_7
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
-  - intent: randevu
-  - action: utter_randevu
   - intent: randevudetay
     entities:
     - uzman: periodontoloji
   - slot_was_set:
     - uzman: periodontoloji
   - action: utter_randevudetay
-  - intent: tarihonay
-    entities:
-    - date: 22.03.2022
-  - slot_was_set:
-    - date: 22.03.2022
-  - action: utter_time
-  - intent: timeonay
-    entities:
-    - time: 10:00
-  - slot_was_set:
-    - time: 10:00
-  - action: utter_randevuonay
-  - intent: name_info
-    entities:
-    - name: Hülya
-  - slot_was_set:
-    - name: Hülya
-  - action: utter_contact
-  - intent: contact_info
-    entities:
-    - mail: ruya.kahveci@gmail.com
-    - phone: '05302615213'
-  - slot_was_set:
-    - mail: ruya.kahveci@gmail.com
-  - slot_was_set:
-    - phone: '05302615213'
-  - action: utter_onay
-  - intent: veda
-  - action: utter_veda
-
-- story: interactive_story_1
-  steps:
-  - intent: randevu
-  - action: utter_randevu
-  - intent: randevudetay
-    entities:
-    - uzman: periodontoloji
-  - slot_was_set:
-    - uzman: periodontoloji
-  - action: utter_randevudetay
-  - intent: tarihonay
-    entities:
-    - date: 22.03.2022
-  - slot_was_set:
-    - date: 22.03.2022
-  - action: utter_time
-  - intent: timeonay
-    entities:
-    - time: 10:00
-  - slot_was_set:
-    - time: 10:00
-  - action: utter_randevuonay
-  - intent: name_info
-    entities:
-    - name: Hülya
-  - slot_was_set:
-    - name: Hülya
-  - action: utter_contact
-  - intent: contact_info
-    entities:
-    - mail: ruya.kahveci@gmail.com
-    - phone: '05302615213'
-  - slot_was_set:
-    - mail: ruya.kahveci@gmail.com
-  - slot_was_set:
-    - phone: '05302615213'
-  - action: utter_onay
-  - intent: veda
-  - action: utter_veda
-
-- story: interactive_story_1
-  steps:
-  - intent: selamlaşma
-  - action: utter_selamlaşma
-  - intent: randevu
-  - action: utter_randevu
-  - intent: randevudetay
-    entities:
-    - uzman: periodontoloji
-  - slot_was_set:
-    - uzman: periodontoloji
-  - action: utter_randevudetay
-  - intent: tarihonay
-    entities:
-    - date: 22.03.2022
-  - slot_was_set:
-    - date: 22.03.2022
-  - action: utter_time
-  - intent: timeonay
-    entities:
-    - time: 10:00
-  - slot_was_set:
-    - time: 10:00
-  - action: utter_randevuonay
-  - intent: name_info
-    entities:
-    - name: Hülya
-  - slot_was_set:
-    - name: Hülya
-  - action: utter_contact
-  - intent: contact_info
-    entities:
-    - mail: ruya.kahveci@gmail.com
-    - phone: '05302615213'
-  - slot_was_set:
-    - mail: ruya.kahveci@gmail.com
-  - slot_was_set:
-    - phone: '05302615213'
-  - action: utter_onay
-  - intent: veda
-  - action: utter_veda
-
-- story: interactive_story_1
-  steps:
-  - intent: randevu
-  - action: utter_randevu
-  - intent: randevudetay
-    entities:
-    - uzman: periodontoloji
-  - slot_was_set:
-    - uzman: periodontoloji
-  - action: utter_randevudetay
-  - intent: tarihonay
-    entities:
-    - date: 22.03.2022
-  - slot_was_set:
-    - date: 22.03.2022
-  - action: utter_time
-  - intent: timeonay
-    entities:
-    - time: 10:00
-  - slot_was_set:
-    - time: 10:00
-  - action: utter_randevuonay
-  - intent: name_info
-    entities:
-    - name: Hülya
-  - slot_was_set:
-    - name: Hülya
-  - action: utter_contact
-  - intent: contact_info
-    entities:
-    - mail: ruya.kahveci@gmail.com
-    - phone: '05302615213'
-  - slot_was_set:
-    - mail: ruya.kahveci@gmail.com
-  - slot_was_set:
-    - phone: '05302615213'
-  - action: utter_onay
-  - intent: veda
-  - action: utter_veda
-
-- story: interactive_story_1
-  steps:
-  - intent: selamlaşma
-  - action: utter_selamlaşma
   - intent: ücret
   - action: utter_ücret
-  - intent: randevudetay
-    entities:
-    - uzman: periodontoloji
-  - slot_was_set:
-    - uzman: periodontoloji
-  - action: utter_randevudetay
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -429,16 +267,16 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_8
   steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
   - intent: ücret
   - action: utter_ücret
-  - intent: randevudetay
-    entities:
-    - uzman: periodontoloji
-  - slot_was_set:
-    - uzman: periodontoloji
-  - action: utter_randevudetay
   - intent: tarihonay
     entities:
     - date: 22.03.2022
@@ -469,7 +307,89 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_9
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_10
+  steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_11
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
@@ -511,7 +431,7 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_12
   steps:
   - intent: ücret
   - action: utter_ücret
@@ -551,8 +471,12 @@ stories:
   - intent: veda
   - action: utter_veda
 
-- story: interactive_story_1
+- story: interactive_story_13
   steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
   - intent: randevudetay
     entities:
     - uzman: periodontoloji
@@ -588,7 +512,88 @@ stories:
   - action: utter_onay
   - intent: veda
   - action: utter_veda
-- story: interactive_story_1
+
+- story: interactive_story_14
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_15
+  steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarihonay
+    entities:
+    - date: 22.03.2022
+  - slot_was_set:
+    - date: 22.03.2022
+  - action: utter_time
+  - intent: timeonay
+    entities:
+    - time: 10:00
+  - slot_was_set:
+    - time: 10:00
+  - action: utter_randevuonay
+  - intent: name_info
+    entities:
+    - name: Hülya
+  - slot_was_set:
+    - name: Hülya
+  - action: utter_contact
+  - intent: contact_info
+    entities:
+    - mail: ruya.kahveci@gmail.com
+    - phone: '05302615213'
+  - slot_was_set:
+    - mail: ruya.kahveci@gmail.com
+  - slot_was_set:
+    - phone: '05302615213'
+  - action: utter_onay
+  - intent: veda
+  - action: utter_veda
+
+- story: interactive_story_16
   steps:
   - intent: selamlaşma
   - action: utter_selamlaşma
@@ -599,6 +604,8 @@ stories:
   - slot_was_set:
     - uzman: diş ve çene cerrahisi
   - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
   - intent: tarihonay
     entities:
     - date: 20.05.2022
@@ -627,4 +634,157 @@ stories:
     - phone: '020051158798'
   - action: utter_onay
   - intent: veda
+  - action: utter_veda
+#olumsuz storyler
+#-------------------------------#
+#-------------------------------#
+
+- story: interactive_story_1
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: tarih
+  - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_2
+  steps:
+  - intent: tarih
+  - action: utter_tarih
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_3
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: tarih
+  - action: utter_tarih
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_4
+  steps:
+  - intent: tarih
+  - action: utter_tarih
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_5
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: tarih
+  - action: utter_tarih
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_6
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_7
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_8
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_9
+  steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_10
+  steps:
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_11
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_12
+  steps:
+  - intent: selamlaşma
+  - action: utter_selamlaşma
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_13
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: randevudetay
+    entities:
+    - uzman: periodontoloji
+  - slot_was_set:
+    - uzman: periodontoloji
+  - action: utter_randevudetay
+  - intent: olumsuz
+  - action: utter_veda
+
+- story: interactive_story_14
+  steps:
+  - intent: ücret
+  - action: utter_ücret
+  - intent: olumsuz
   - action: utter_veda
