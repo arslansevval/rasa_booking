@@ -61,21 +61,31 @@ responses:
   utter_selamlaşma:
   - text: Merhabalar, nasıl yardımcı olabilirim?
   utter_ücret:
-  - text: Muayene ve röntgen hizmetimz ücretsizdir. Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir.
+  - text: |-
+      Muayene ve röntgen hizmetimz ücretsizdir. 
+      Geldiğinizde durumunuza göre bir tedavi belirlenecek ve ona göre bir ücret verilecektir.
   utter_randevudetay:
-  - text: '{uzman} uzmanımız ... tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. Muayene için randevu alabilirsiniz. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
+  - text: |-
+      {uzman} uzmanımız 27.06.2022 - 12.07.2022 tarihlerinde 09:00/18.00 saatleri arasında kliniğimizde olacaktır. 
+      Muayene için randevu alabilirsiniz. 
+      Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
   utter_tarih:
-  - text: Size yardımcı olabilmek adına doktorlarımızın müsait olduğu tarihleri vereceğim. '.... tarihler aralığında müsaitiz efendim. Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.'
+  - text: |-
+      Size yardımcı olabilmek adına doktorlarımızın müsait olduğu tarihleri vereceğim. 
+      27.06.2022 - 12.07.2022 tarihler aralığında müsaitiz efendim. 
+      Hangi tarihi seçtiğinizi belirtirseniz müsait olduğumuz saatleri de size bildirebilirim.
   utter_time:
-  - text: '{date} tarihinde, .... saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.'
+  - text: Belirtilen {date} tarihinde, 09:00/18:00 saatlerinde uygunuz. Lütfen uygun olduğunuz saati de bildiriniz.
   utter_randevuonay:
-  - text: "{date} tarihinde saat {time}'da randevunuzu oluşturmak için bazı kişisel bilgilere ihityacım var. Lütfen isim ve soyisim bilgilerinizi girer misiniz?  "
+  - text: |-
+      {date} tarihinde saat {time}'da randevunuzu oluşturmak için bazı kişisel bilgilere ihityacım var. 
+      Lütfen isim ve soyisim bilgilerinizi girer misiniz? 
   utter_contact:
   - text: |-
       Tanıştığımıza memnun oldum {name}!
       İleride size daha kolay ulaşmamız adına e-mail adresinizi ve telefon numarınızı alabilir miyim?
   utter_onay:
-  - text: "{date} tarihinde saat {time}'da randevunuz oluşturulmuştur."
+  - text: Belirtilen {date} tarihinde saat {time}'da randevunuz oluşturulmuştur.
   utter_veda:
   - text: İyi günler dilerim.
 actions:

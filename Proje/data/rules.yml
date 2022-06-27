@@ -2,6 +2,16 @@ version: "3.0"
 
 rules:
 
+- rule: Say goodbye anytime the user says negative thing
+  steps:
+  - intent: olumsuz
+  - action: utter_veda
+
+- rule: Continue conversation
+  steps:
+  - intent: randevudetay
+  - action: utter_randevudetay
+
 # - rule: Say goodbye anytime the user says goodbye
 #   steps:
 #   - intent: goodbye

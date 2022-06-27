@@ -12,21 +12,116 @@ nlu:
 - intent: ücret
   examples: |
     - Muayene ücreti hakkında bilgi almak istiyorum. Ona göre randevu alıp almayacağıma karar vereceğim.
-    - muayene ücretini öğrenebilir miyim
-    - Muayene ücretini öğrenmek istiyorum  
+    - muayene ücretini öğrenebilir miyim?
+    - Muayene ücretini öğrenmek istiyorum?
     - Muayene ücretini öğrenebilir miyim?
     - Muayene ücreti ne kadar?
     - Randevu almak istiyorum fakat önce muayene ücretini öğrenebilir miyim?
+    - Ücret nedir?
+    - Ücret ne kadar?
+    - Ücret ne?
+    - Ücret?
+    - Bize ne kadara patlar?
+    - Ne kadar tutar?
+    - Ne kadar?
+    - Muayene ücreti nedir?
+    - Muayene ücreti ne kadar?
+    - Muayene ne kadar?
+    - Muayene ne kadar tutar?
+    - Fiyat nedir?
+    - Fiyat ne kadar?
+    - Fiyat?
+    - Fiyat bilgilendirmesi alabilir miyim?
+    - Mümkünse fiyatını öğrenebilir miyim?
+    - Mümkünsü ücreti öğrenebilir miyim?
+    - Mümkünse tutarı öğrenebilir miyim?
+    - Ücret bilgilendirmesi alabilir miyim?
+    - Ortalama ücret ne kadar?
+    - Ortalama fiyat ne kadar?
+    - Ortalama maliyet nedir?
+    - Bize kaça olur?
+    - Fiyatı nedir?
+    - İşlem ücreti nedir?
+    - İşlem fiyatı nedir?
+    - Randevu ücreti ne kadar?
+    - Randevu ücreti?
+    - Randevu fiyatı?
     
 - intent: randevudetay
   examples: |
-    - Merhaba ben kanal tedavi uzmanınız var mı? Bilgi almak istiyorum.
+    - [Ortodonti]'den(uzman) randevu almak istiyorum.
+    - [Periodontoloji]'den(uzman) randevu almak istiyorum.
+    - [Pedodonti]'den(uzman) randevu almak istiyorum.
+    - [Çene Cerrahisi]'den(uzman) randevu almak istiyorum.
+    - [Protetik Diş]'den(uzman) randevu almak istiyorum.
+    - [Ağız, Diş ve Çene Cerrahisi]'den(uzman) randevu almak istiyorum.
+    - [Restoratif Diş Tedavisi]'den(uzman) randevu almak istiyorum.
+    - [Ortodonti](uzman) uzmanınız var mı?
+    - [Periodontoloji](uzman) uzmanınız var mı?
+    - [Pedodonti](uzman) uzmanınız var mı?
+    - [Çene Cerrahisi](uzman) uzmanınız var mı?
+    - [Protetik Diş](uzman) uzmanınız var mı?
+    - [Ağız, Diş ve Çene Cerrahisi](uzman) uzmanınız var mı?
+    - [Restoratif Diş Tedavisi](uzman) uzmanınız var mı?
+    - Merhaba [Ortodonti](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Periodontoloji](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Pedodonti](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Çene Cerrahisi](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Protetik Diş](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Ağız, Diş ve Çene Cerrahisi](uzman) uzmanınız var mı? Bilgi almak istiyorum.
+    - Merhaba [Restoratif Diş Tedavisi](uzman) uzmanınız var mı? Bilgi almak istiyorum.
     - Benim dişlerimde [cerrahi](uzman) bir müdahale gerekli bu nedenle uzman tarafından bilgi almak ve muayene olmak için bu bölümden randevu almak istiyorum.
     - Kanal tedavi işlemi gören bir dişimde ağrı var. [Endodonti](uzman) uzmanınız var mı bilgi alabilir miyim?
-    - Kliniğinizde periodontoloji uzmanı
-    - [Ağız, diş ve çene cerrahisi](uzman) bölümünüz var mı?
-    - Kliniğinizde [periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
-    - Kliniğinizde [ağız diş ve çene cerrahisi](uzman) alanında uzman çalışıyor mu?
+    - [Ortodonti](uzman) bölümünüz var mı?
+    - [Periodontoloji](uzman) bölümünüz var mı?
+    - [Pedodonti](uzman) bölümünüz var mı?
+    - [Çene Cerrahisi](uzman) bölümünüz var mı?
+    - [Protetik Diş](uzman) bölümünüz var mı?
+    - [Ağız, Diş ve Çene Cerrahisi](uzman) bölümünüz var mı?
+    - [Restoratif Diş Tedavisi](uzman) bölümünüz var mı?
+    - Kliniğinizde [Ortodonti](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Pedodonti](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Çene Cerrahisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Protetik Diş](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Ağız, Diş ve Çene Cerrahisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Restoratif Diş Tedavisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Kliniğinizde [Ortodonti](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Periodontoloji](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Pedodonti](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Çene Cerrahisi](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Protetik Diş](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Ağız, Diş ve Çene Cerrahisi](uzman) alanında uzman çalışıyor mu?
+    - Kliniğinizde [Restoratif Diş Tedavisi](uzman) alanında uzman çalışıyor mu?
+    - [Periodontoloji](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - [Pedodonti](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - [Çene Cerrahisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - [Protetik Diş](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - [Ağız, Diş ve Çene Cerrahisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - [Restoratif Diş Tedavisi](uzman) uzmanı var mı? Bilgi alabilir miyim?
+    - Dişimde ağrı var da, randevu alabilir miyim?
+    - Dişimde ağrı var [Ortodonti](uzman) var mı?
+    - Dişimde ağrı var [Periodontoloji](uzman) var mı?
+    - Dişimde ağrı var [Pedodonti](uzman) var mı?
+    - Dişimde ağrı var [Çene Cerrahisi](uzman) var mı?
+    - Dişimde ağrı var [Protetik Diş](uzman) var mı?
+    - Dişimde ağrı var [Ağız, Diş ve Çene Cerrahisi](uzman) var mı?
+    - Dişimde ağrı var [Restoratif Diş Tedavisi](uzman) var mı? 
+    - Ortodonti](uzman) var mı?
+    - [Periodontoloji](uzman) var mı?
+    - [Pedodonti](uzman) var mı?
+    - [Çene Cerrahisi](uzman) var mı?
+    - [Protetik Diş](uzman) var mı?
+    - [Ağız, Diş ve Çene Cerrahisi](uzman) var mı?
+    - [Restoratif Diş Tedavisi](uzman) var mı?
+    - [Ortodonti](uzman)
+    - [Periodontoloji](uzman)
+    - [Pedodonti](uzman)
+    - [Çene Cerrahisi](uzman)
+    - [Protetik Diş](uzman)
+    - [Ağız, Diş ve Çene Cerrahisi](uzman)
+    - [Restoratif Diş Tedavisi](uzman)
+
 - intent: tarih
   examples: |
     - randevu almak istiyorum
@@ -59,31 +154,208 @@ nlu:
     - En yakın ne zamana randevu alabilirim? 
 - intent: tarihonay
   examples: |
-    - [20.03.2022](date) tarihine randevu almak istiyorum.
-    - [28.04.2022](date)
-    - [20.05.2022](date) tarihini seçiyorum
-    - [20:03:2022](date) tarihine randevu almak istiyorum.
-    - [28:10.2022](date)
-    - [04.12:2023](date) tarihini seçiyorum
-    - [20.11.2024](date) tarihine randevu almak istiyorum.
-    - [15.07.2025](date)
-    - [29.08.2022](date) tarihini seçiyorum
+    - [01.03.2022](date) tarihine randevu almak istiyorum.
+    - [27:05:2022](date) tarihine randevu almak istiyorum.
+    - [19.11.2024](date) tarihine randevu almak istiyorum.
+    - [13.08.2024](date) tarihine randevu almak istiyorum.
+    - [01.01.2024](date) tarihine randevu almak istiyorum.
+    - [13.04.2024](date) tarihine randevu almak istiyorum.
+    - [20.12.2024](date) tarihine randevu almak istiyorum.
+    - [24.06.2024](date) tarihine randevu almak istiyorum.
+    - [09.11.2024](date) tarihine randevu almak istiyorum.
+    - [31.03.2024](date) tarihine randevu almak istiyorum.
+    - [01.03.2022](date)
+    - [27:05:2022](date)
+    - [19.11.2024](date)
+    - [13.08.2024](date)
+    - [01.01.2024](date)
+    - [13.04.2024](date)
+    - [20.12.2024](date)
+    - [24.06.2024](date)
+    - [09.11.2024](date)
+    - [31.03.2024](date)
+    - [01.03.2022](date) tarihini seçiyorum.
+    - [27:05:2022](date) tarihini seçiyorum.
+    - [19.11.2024](date) tarihini seçiyorum.
+    - [13.08.2024](date) tarihini seçiyorum.
+    - [01.01.2024](date) tarihini seçiyorum.
+    - [13.04.2024](date) tarihini seçiyorum.
+    - [20.12.2024](date) tarihini seçiyorum.
+    - [24.06.2024](date) tarihini seçiyorum.
+    - [09.11.2024](date) tarihini seçiyorum.
+    - [31.03.2024](date) tarihini seçiyorum.
+    - [01.03.2022](date) tarihi bana uygundur.
+    - [27:05:2022](date) tarihi bana uygundur.
+    - [19.11.2024](date) tarihi bana uygundur.
+    - [13.08.2024](date) tarihi bana uygundur.
+    - [01.01.2024](date) tarihi bana uygundur.
+    - [13.04.2024](date) tarihi bana uygundur.
+    - [20.12.2024](date) tarihi bana uygundur.
+    - [24.06.2024](date) tarihi bana uygundur.
+    - [09.11.2024](date) tarihi bana uygundur.
+    - [31.03.2024](date) tarihi bana uygundur.
+    - [01.03.2022](date) tarihi için randevu oluşturmak istiyorum.
+    - [27:05:2022](date) tarihi için randevu oluşturmak istiyorum.
+    - [19.11.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [13.08.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [01.01.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [13.04.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [20.12.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [24.06.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [09.11.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [31.03.2024](date) tarihi için randevu oluşturmak istiyorum.
+    - [01.03.2022](date) tarihi için randevu oluşturabilirsiniz.
+    - [27:05:2022](date) tarihi için randevu oluşturabilirsiniz.
+    - [19.11.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [13.08.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [01.01.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [13.04.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [20.12.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [24.06.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [09.11.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [31.03.2024](date) tarihi için randevu oluşturabilirsiniz.
+    - [01.03.2022](date) uygundur.
+    - [27:05:2022](date) uygundur.
+    - [19.11.2024](date) uygundur.
+    - [13.08.2024](date) uygundur.
+    - [01.01.2024](date) uygundur.
+    - [13.04.2024](date) uygundur.
+    - [20.12.2024](date) uygundur.
+    - [24.06.2024](date) uygundur.
+    - [09.11.2024](date) uygundur.
+    - [31.03.2024](date) uygundur.
+    - Randevu için [01.03.2022](date) uygundur.
+    - Randevu için [27:05:2022](date) uygundur.
+    - Randevu için [19.11.2024](date) uygundur.
+    - Randevu için [13.08.2024](date) uygundur.
+    - Randevu için [01.01.2024](date) uygundur.
+    - Randevu için [13.04.2024](date) uygundur.
+    - Randevu için [20.12.2024](date) uygundur.
+    - Randevu için [24.06.2024](date) uygundur.
+    - Randevu için [09.11.2024](date) uygundur.
+    - Randevu için [31.03.2024](date) uygundur.
+    - Randevu tarihi [01.03.2022](date) uygundur.
+    - Randevu tarihi [27:05:2022](date) uygundur.
+    - Randevu tarihi [19.11.2024](date) uygundur.
+    - Randevu tarihi [13.08.2024](date) uygundur.
+    - Randevu tarihi [01.01.2024](date) uygundur.
+    - Randevu tarihi [13.04.2024](date) uygundur.
+    - Randevu tarihi [20.12.2024](date) uygundur.
+    - Randevu tarihi [24.06.2024](date) uygundur.
+    - Randevu tarihi [09.11.2024](date) uygundur.
+    - Randevu tarihi [31.03.2024](date) uygundur.
+    - Randevu almak istediğim tarih [01.03.2022](date)
+    - Randevu almak istediğim tarih [27:05:2022](date)
+    - Randevu almak istediğim tarih [19.11.2024](date)
+    - Randevu almak istediğim tarih [13.08.2024](date)
+    - Randevu almak istediğim tarih [01.01.2024](date)
+    - Randevu almak istediğim tarih [13.04.2024](date)
+    - Randevu almak istediğim tarih [20.12.2024](date)
+    - Randevu almak istediğim tarih [24.06.2024](date)
+    - Randevu almak istediğim tarih [09.11.2024](date)
+    - Randevu almak istediğim tarih [31.03.2024](date)
+    - Tarih [01.03.2022](date)
+    - Tarih [27:05:2022](date)
+    - Tarih [19.11.2024](date)
+    - Tarih [13.08.2024](date)
+    - Tarih [01.01.2024](date)
+    - Tarih [13.04.2024](date)
+    - Tarih [20.12.2024](date)
+    - Tarih [24.06.2024](date)
+    - Tarih [09.11.2024](date)
+    - Tarih [31.03.2024](date)
 - intent: timeonay
   examples: |
     - Saat [09:00](time) bana uygundur.
-    - Saat [09.00](time) bana uygundur.
-    - [10:00](time)
-    - [11.00](time)
-    - [12:00](time)
-    - [09.00](time)
-    - [10:00](time) saatini seçiyorum.
-    - [11.00](time) saatini seçiyorum.
-    - [12:00](time) saatini seçiyorum.
-    - [09.00](time) saatini seçiyorum.
-    - [10:00](time) saatine randevu almak itiyorum.
-    - [11.00](time) saatine randevu almak itiyorum.
-    - [12:00](time) saatine randevu almak itiyorum.
-    - [09.00](time) saatine randevu almak itiyorum.
+    - Saat [10.00](time) bana uygundur.
+    - Saat [11.15](time) bana uygundur.
+    - Saat [12.30](time) bana uygundur.
+    - Saat [18.00](time) bana uygundur.
+    - Saat [17.45](time) bana uygundur.
+    - Saat [10.45](time) bana uygundur.
+    - Saat [08.00](time) bana uygundur.
+    - Saat [08.30](time) bana uygundur.
+    - Saat [17.15](time) bana uygundur.
+    - [09:00](time)
+    - [10.00](time)
+    - [11.15](time)
+    - [12.30](time)
+    - [18.00](time)
+    - [17.45](time)
+    - [10.45](time)
+    - [08.00](time)
+    - [08.30](time)
+    - [17.15](time)
+    - [09:00](time) saatini seçiyorum.
+    - [10.00](time) saatini seçiyorum.
+    - [11.15](time) saatini seçiyorum.
+    - [12.30](time) saatini seçiyorum.
+    - [18.00](time) saatini seçiyorum.
+    - [17.45](time) saatini seçiyorum.
+    - [10.45](time) saatini seçiyorum.
+    - [08.00](time) saatini seçiyorum.
+    - [08.30](time) saatini seçiyorum.
+    - [17.15](time) saatini seçiyorum.
+    - [09:00](time) saatine randevu almak istiyorum.
+    - [10.00](time) saatine randevu almak istiyorum.
+    - [11.15](time) saatine randevu almak istiyorum.
+    - [12.30](time) saatine randevu almak istiyorum.
+    - [18.00](time) saatine randevu almak istiyorum.
+    - [17.45](time) saatine randevu almak istiyorum.
+    - [10.45](time) saatine randevu almak istiyorum.
+    - [08.00](time) saatine randevu almak istiyorum.
+    - [08.30](time) saatine randevu almak istiyorum.
+    - [17.15](time) saatine randevu almak istiyorum.
+    - En uygun saat [09:00](time)
+    - En uygun saat [10.00](time)
+    - En uygun saat [11.15](time)
+    - En uygun saat [12.30](time)
+    - En uygun saat [18.00](time)
+    - En uygun saat [17.45](time)
+    - En uygun saat [10.45](time)
+    - En uygun saat [08.00](time)
+    - En uygun saat [08.30](time)
+    - En uygun saat [17.15](time)
+    - [09:00](time) saati uygundur.
+    - [10.00](time) saati uygundur.
+    - [11.15](time) saati uygundur.
+    - [12.30](time) saati uygundur.
+    - [18.00](time) saati uygundur.
+    - [17.45](time) saati uygundur.
+    - [10.45](time) saati uygundur.
+    - [08.00](time) saati uygundur.
+    - [08.30](time) saati uygundur.
+    - [17.15](time) saati uygundur.
+    - [09:00](time) saatinde müsaitim.
+    - [10.00](time) saatinde müsaitim.
+    - [11.15](time) saatinde müsaitim.
+    - [12.30](time) saatinde müsaitim.
+    - [18.00](time) saatinde müsaitim.
+    - [17.45](time) saatinde müsaitim.
+    - [10.45](time) saatinde müsaitim.
+    - [08.00](time) saatinde müsaitim.
+    - [08.30](time) saatinde müsaitim.
+    - [17.15](time) saatinde müsaitim.
+    - Saat [09:00](time) müsaitim.
+    - Saat [10.00](time) müsaitim.
+    - Saat [11.15](time) müsaitim.
+    - Saat [12.30](time) müsaitim.
+    - Saat [18.00](time) müsaitim.
+    - Saat [17.45](time) müsaitim.
+    - Saat [10.45](time) müsaitim.
+    - Saat [08.00](time) müsaitim.
+    - Saat [08.30](time) müsaitim.
+    - Saat [17.15](time) müsaitim.
+    - Saat [09:00](time) benim için uygundur.
+    - Saat [10.00](time) benim için uygundur.
+    - Saat [11.15](time) benim için uygundur.
+    - Saat [12.30](time) benim için uygundur.
+    - Saat [18.00](time) benim için uygundur.
+    - Saat [17.45](time) benim için uygundur.
+    - Saat [10.45](time) benim için uygundur.
+    - Saat [08.00](time) benim için uygundur.
+    - Saat [08.30](time) benim için uygundur.
+    - Saat [17.15](time) benim için uygundur.
 - intent: name_info
   examples: |
     - Benim Adım [Şahnur Yılmaz](name)

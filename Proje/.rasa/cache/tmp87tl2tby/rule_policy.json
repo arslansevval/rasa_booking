@@ -1,0 +1,30 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"randevudetay\"}}]": "utter_randevudetay",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"randevudetay\"}}, {\"prev_action\": {\"action_name\": \"utter_randevudetay\"}, \"user\": {\"intent\": \"randevudetay\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"olumsuz\"}}]": "utter_veda",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"olumsuz\"}}, {\"prev_action\": {\"action_name\": \"utter_veda\"}, \"user\": {\"intent\": \"olumsuz\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "handling active loops and forms - time_form - action_listen",
+      "handling active loops and forms - uzman_form - action_listen",
+      "predicting default action with intent back",
+      "handling active loops and forms - time_form",
+      "handling active loops and forms - mail_form - action_listen",
+      "handling active loops and forms - uzman_form",
+      "handling active loops and forms - name_form - action_listen",
+      "handling active loops and forms - phone_form - action_listen",
+      "handling active loops and forms - date_form",
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart",
+      "handling active loops and forms - name_form",
+      "handling active loops and forms - phone_form",
+      "handling active loops and forms - date_form - action_listen",
+      "handling active loops and forms - mail_form"
+    ]
+  }
+}
